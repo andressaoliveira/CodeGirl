@@ -16,12 +16,17 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     display: flex;
     justify-content: center;
     color: #FF4389;
 }
 
+h3 {
+    font-size: 80px;
+}
+
 h1 {
-    font-size: 100px;
+    font-size: 60px;
 }
