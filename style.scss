@@ -1,0 +1,52 @@
+@import "cores.scss";
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: $rosaPink;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: $rosaClaro;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    nav {
+        height: 60px;
+        padding-bottom: 20px;
+    }
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+a:hover {
+    color: $cinza;
+}
+
+h1,
+h2,
+h3 {
+    display: flex;
+    justify-content: center;
+    color: $rosaPink;
+}
+
+h3 {
+    font-size: 80px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+@import 'cupons/cupons.scss';
+@import 'contato/contato.scss';
+@import 'cursos/cursos.scss';
+@import 'menu/menu.scss';

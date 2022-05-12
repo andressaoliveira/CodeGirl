@@ -1,0 +1,26 @@
+#menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: $rosaPink;
+    .item-menu:hover {
+        background: $rosaEscuro;
+    }
+    .item-menu {
+        display: flex;
+        height: 47px;
+        width: 150px;
+        border-right: 1px solid $branco;
+        a {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            color: $branco;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .item-menu:hover {
+        background: $rosaEscuro;
+    }
+}
