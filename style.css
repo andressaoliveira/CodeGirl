@@ -3,6 +3,7 @@
   margin: 0;
   text-decoration: none;
   color: #FF4389;
+  font-family: "MS PGothic", "Arial", sans-serif;
 }
 
 html {
@@ -14,6 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  font-family: "MS PGothic", "Arial", sans-serif;
 }
 body nav {
   height: 60px;
