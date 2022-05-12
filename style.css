@@ -15,7 +15,6 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  font-family: "MS PGothic", "Arial", sans-serif;
 }
 body nav {
   height: 60px;
@@ -66,7 +65,7 @@ h1 {
 }
 .contatos .contato {
   display: flex;
-  height: 50px;
+  margin: 15px 0;
 }
 
 #menu {
