@@ -1,99 +1,108 @@
 * {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  color: #FF4389;
-  font-family: "MS PGothic", "Arial", sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #FF4389;
+    font-family: "MS PGothic", "Arial", sans-serif;
 }
 
 html {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  background-color: #FFE7F0;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  font-family: "MS PGothic", "Arial", sans-serif;
+    background-color: #FFE7F0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: "MS PGothic", "Arial", sans-serif;
 }
+
 body nav {
-  height: 60px;
-  padding-bottom: 20px;
+    height: 60px;
+    padding-bottom: 20px;
 }
+
 body .container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 a:hover {
-  color: #737373;
+    color: #737373;
 }
 
 h1,
 h2,
 h3 {
-  display: flex;
-  justify-content: center;
-  color: #FF4389;
+    display: flex;
+    justify-content: center;
+    color: #FF4389;
 }
 
 h3 {
-  font-size: 80px;
+    font-size: 80px;
 }
 
 h1 {
-  font-size: 60px;
+    font-size: 60px;
 }
 
 .cupons {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
+
 .cupons .cupom {
-  border: 1px solid red;
-  width: 20%;
-  height: 100px;
+    border: 1px solid red;
+    width: 20%;
+    height: 100px;
 }
 
 .contatos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
 }
+
 .contatos .contato {
-  display: flex;
-  height: 50px;
+    display: flex;
+    height: 50px;
 }
 
 #menu {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  background-color: #FF4389;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #FF4389;
 }
+
 #menu .item-menu:hover {
-  background: #C25F84;
+    background: #C25F84;
 }
+
 #menu .item-menu {
-  display: flex;
-  height: 47px;
-  width: 150px;
-  border-right: 1px solid #F3EDED;
+    display: flex;
+    height: 47px;
+    width: 150px;
+    border-right: 1px solid #F3EDED;
 }
+
 #menu .item-menu a {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  color: #F3EDED;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: #F3EDED;
+    justify-content: center;
+    align-items: center;
 }
+
 #menu .item-menu:hover {
-  background: #C25F84;
+    background: #C25F84;
 }
+
 
 /*# sourceMappingURL=style.css.map */
