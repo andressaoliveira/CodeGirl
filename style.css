@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
-  color: #FF4389;
+  color: #F1C2F2;
   font-family: "Consolas", "Arial", sans-serif;
 }
 
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: #FFE7F0;
+  background-color: #0B090D !important;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -22,12 +22,39 @@ body nav {
 }
 body .container {
   height: 100%;
+  padding: 20px 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "imagem apresentacao" "assinatura assinatura";
+  flex-direction: column;
+  justify-items: center;
+}
+body .container #imagem-principal {
+  grid-area: imagem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container #apresentacao {
+  grid-area: apresentacao;
+}
+body .container #apresentacao div {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+body .container #assinatura {
+  grid-area: assinatura;
+  color: #2EF297;
 }
 
+a {
+  color: #2EF297;
+}
 a:hover {
-  color: #737373;
+  color: #C25F84;
 }
 
 h1,
@@ -35,7 +62,7 @@ h2,
 h3 {
   display: flex;
   justify-content: center;
-  color: #FF4389;
+  color: #F1C2F2;
 }
 
 h3 {
@@ -49,50 +76,83 @@ h1 {
 .cupons {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
+  padding-top: 50px;
 }
 .cupons .cupom {
-  border: 1px solid red;
-  width: 20%;
-  height: 100px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 20px solid #2EF297;
+  background-color: #F3EDED;
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+}
+.cupons .cupom h1 {
+  font-size: 24px;
+  color: #C25F84;
+  font-weight: 600;
+  text-align: center;
+}
+.cupons .cupom h2 {
+  font-size: 14px;
+  color: #0B090D;
+  text-align: center;
+}
+.cupons .cupom a {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0 15px;
+  color: #C25F84;
+  font-size: 20px;
+  background-color: #2EF297;
+  border-radius: 20px;
+}
+.cupons .cupom a:hover {
+  color: #F1C2F2;
 }
 
 .contatos {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 100px;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 300px;
 }
 .contatos .contato {
+  padding: 50px;
+  color: white;
   display: flex;
   margin: 15px 0;
 }
+.contatos .contato a img {
+  width: 100px;
+}
 
 #menu {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: row;
-  background-color: #FF4389;
-}
-#menu .item-menu:hover {
-  background: #C25F84;
+  justify-content: end;
+  background-color: #0B090D;
+  margin-right: 20px;
+  font-weight: 800;
+  font-size: 22px;
 }
 #menu .item-menu {
   display: flex;
   height: 47px;
   width: 150px;
-  border-right: 1px solid #F3EDED;
 }
 #menu .item-menu a {
   display: flex;
   width: 100%;
   height: 100%;
-  color: #F3EDED;
   justify-content: center;
   align-items: center;
-}
-#menu .item-menu:hover {
-  background: #C25F84;
 }
 
 /*# sourceMappingURL=style.css.map */

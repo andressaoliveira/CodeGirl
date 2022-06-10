@@ -1,10 +1,42 @@
 .cupons {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
+    padding-top: 50px;
     .cupom {
-        border: 1px solid red;
-        width: 20%;
-        height: 100px;
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 20px solid $verde;
+        background-color: $branco;
+        width: 250px;
+        height: 250px;
+        margin: 10px;
+        h1 {
+            font-size: 24px;
+            color: $rosaEscuro;
+            font-weight: 600;
+            text-align: center;
+        }
+        h2 {
+            font-size: 14px;
+            color: $preto;
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0 15px;
+            color: $rosaEscuro;
+            font-size: 20px;
+            background-color: $verde;
+            border-radius: 20px;
+            &:hover {
+                color: $rosaClaro;
+            }
+        }
     }
 }
