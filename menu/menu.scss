@@ -1,26 +1,22 @@
 #menu {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
-    background-color: $rosaPink;
-    .item-menu:hover {
-        background: $rosaEscuro;
-    }
+    justify-content: end;
+    background-color: $preto;
+    margin-right: 20px;
+    font-weight: 800;
+    font-size: 22px;
     .item-menu {
         display: flex;
         height: 47px;
         width: 150px;
-        border-right: 1px solid $branco;
         a {
             display: flex;
             width: 100%;
             height: 100%;
-            color: $branco;
             justify-content: center;
             align-items: center;
         }
-    }
-    .item-menu:hover {
-        background: $rosaEscuro;
     }
 }
