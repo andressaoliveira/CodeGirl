@@ -102,6 +102,12 @@ body .container {
   align-items: center;
   padding: 50px 0;
 }
+#home #apresentacao a {
+  color: #45CE73;
+}
+#home #apresentacao a:hover {
+  color: #B6FFCE;
+}
 #home #assinatura {
   grid-area: assinatura;
   display: flex;
