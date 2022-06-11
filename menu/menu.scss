@@ -1,35 +1,30 @@
 #menu-container {
-    display: flex;
-    padding: 10px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 10px 20px;
+    width: 50px;
+    height: 100%;
     font-size: 22px;
-    a {
-        margin: 0 20px;
-    }
-    .topnav {
-        display: none;
-    }
-    .topnav.responsive {
-        background-color: black;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 15px;
-        right: 15px;
-    }
+    padding: 50px 0;
+    #itens-menu {}
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: $desktop) {
     #menu-container {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0;
         .icon {
             display: none;
         }
-        #myTopnav {
+        #itens-menu {
             display: flex;
+            padding-right: 50px;
+            a {
+                margin: 0 20px;
+                &:hover {
+                    color: $verde;
+                }
+            }
         }
     }
 }

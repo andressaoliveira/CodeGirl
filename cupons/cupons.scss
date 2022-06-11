@@ -1,4 +1,4 @@
-.cupons {
+#cupons {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -30,7 +30,7 @@
             text-decoration: none;
             font-weight: 600;
             padding: 0 15px;
-            color: $verdeClaro;
+            color: $verdeEscuro;
             font-size: 20px;
             background-color: $rosa;
             border-radius: 20px;

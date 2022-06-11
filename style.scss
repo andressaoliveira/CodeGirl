@@ -12,43 +12,42 @@ html {
 }
 
 body {
+    overflow: hidden;
+    padding: 0 20px;
     background-color: $preto !important;
-    display: flex;
-    flex-direction: column;
     height: 100%;
-    nav {
-        padding-bottom: 20px;
-        #menu {
-            height: 65px;
+    display: grid;
+    grid-template-columns: auto max-content;
+    grid-template-areas: "container menu-mobile";
+    #nav {
+        display: none;
+    }
+    #nav-mobile {
+        grid-area: menu-mobile;
+        width: 50px;
+    }
+    .nav .resposivel {
+        grid-area: menu-desktop;
+    }
+    .container {
+        grid-area: container;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    body {
+        display: flex;
+        flex-direction: column;
+        #nav-mobile {
+            display: none
+        }
+        #nav {
+            display: flex;
+            height: 65px
         }
     }
-    #home {
-        height: 100%;
-    }
-}
-
-a {
-    color: $verde;
-    &:hover {
-        color: $rosaEscuro;
-    }
-}
-
-span,
-h1,
-h2,
-h3 {
-    display: flex;
-    justify-content: center;
-    color: $rosaClaro;
-}
-
-h3 {
-    font-size: 80px;
-}
-
-h1 {
-    font-size: 60px;
 }
 
 @import 'menu/menu.scss';

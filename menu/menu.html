@@ -13,7 +13,7 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
-        <div class="topnav" id="myTopnav">
+        <div class="links" id="itens-menu">
             <a href="/" target="_parent">Home</a>
             <a href="/cupons" target="_parent">Descontos</a>
             <a href="/cursos" target="_parent">Cursos</a>
@@ -24,11 +24,12 @@
 
     <script>
         function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
+            var x = document.getElementById("nav-mobile");
+            alert(x);
+            if (x.className === "nav") {
                 x.className += " responsive";
             } else {
-                x.className = "topnav";
+                x.className = "nav";
             }
         }
     </script>
