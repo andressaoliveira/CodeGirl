@@ -17,7 +17,7 @@
         margin: 10px;
         h1 {
             font-size: 24px;
-            color: $rosaEscuro;
+            color: $rosa;
             font-weight: 600;
             text-align: center;
         }
@@ -30,12 +30,12 @@
             text-decoration: none;
             font-weight: 600;
             padding: 0 15px;
-            color: $rosaEscuro;
+            color: $verdeClaro;
             font-size: 20px;
-            background-color: $verde;
+            background-color: $rosa;
             border-radius: 20px;
             &:hover {
-                color: $rosaClaro;
+                color: $verde;
             }
         }
     }

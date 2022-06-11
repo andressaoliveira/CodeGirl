@@ -1,0 +1,35 @@
+.container {
+    height: 100%;
+    padding: 20px 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "imagem apresentacao" "assinatura assinatura";
+    justify-items: center;
+    align-items: center;
+    #imagem-principal {
+        grid-area: imagem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #apresentacao {
+        grid-area: apresentacao;
+        font-size: 20px;
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 50px;
+        }
+    }
+    #assinatura {
+        grid-area: assinatura;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        span {
+            color: $verde;
+            font-size: 22px;
+        }
+    }
+}

@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
-  color: #F1C2F2;
+  color: #FFC0E0;
   font-family: "Dosis", "Calibri", sans-serif;
 }
 
@@ -11,55 +11,26 @@ html {
 }
 
 body {
-  background-color: #0B090D !important;
+  background-color: #2B2B2B !important;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 body nav {
-  height: 60px;
   padding-bottom: 20px;
 }
-body .container {
+body nav #menu {
+  height: 65px;
+}
+body #home {
   height: 100%;
-  padding: 20px 100px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "imagem apresentacao" "assinatura assinatura";
-  justify-items: center;
-}
-body .container #imagem-principal {
-  grid-area: imagem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body .container #apresentacao {
-  grid-area: apresentacao;
-  font-size: 20px;
-}
-body .container #apresentacao div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 50px;
-}
-body .container #assinatura {
-  grid-area: assinatura;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-body .container #assinatura span {
-  color: #2EF297;
-  font-size: 22px;
 }
 
 a {
-  color: #2EF297;
+  color: #45CE73;
 }
 a:hover {
-  color: #C25F84;
+  color: #803C5A;
 }
 
 span,
@@ -68,7 +39,7 @@ h2,
 h3 {
   display: flex;
   justify-content: center;
-  color: #F1C2F2;
+  color: #FFC0E0;
 }
 
 h3 {
@@ -77,6 +48,75 @@ h3 {
 
 h1 {
   font-size: 60px;
+}
+
+#menu-container {
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  font-size: 22px;
+}
+#menu-container a {
+  margin: 0 20px;
+}
+#menu-container .topnav {
+  display: none;
+}
+#menu-container .topnav.responsive {
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+@media screen and (min-width: 800px) {
+  #menu-container .icon {
+    display: none;
+  }
+  #menu-container #myTopnav {
+    display: flex;
+  }
+}
+.container {
+  height: 100%;
+  padding: 20px 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "imagem apresentacao" "assinatura assinatura";
+  justify-items: center;
+  align-items: center;
+}
+.container #imagem-principal {
+  grid-area: imagem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container #apresentacao {
+  grid-area: apresentacao;
+  font-size: 20px;
+}
+.container #apresentacao div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.container #assinatura {
+  grid-area: assinatura;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container #assinatura span {
+  color: #45CE73;
+  font-size: 22px;
 }
 
 .cupons {
@@ -92,34 +132,34 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border-top: 20px solid #2EF297;
-  background-color: #F3EDED;
+  border-top: 20px solid #45CE73;
+  background-color: #FFFFFF;
   width: 250px;
   height: 250px;
   margin: 10px;
 }
 .cupons .cupom h1 {
   font-size: 24px;
-  color: #C25F84;
+  color: #FF78B5;
   font-weight: 600;
   text-align: center;
 }
 .cupons .cupom h2 {
   font-size: 14px;
-  color: #0B090D;
+  color: #2B2B2B;
   text-align: center;
 }
 .cupons .cupom a {
   text-decoration: none;
   font-weight: 600;
   padding: 0 15px;
-  color: #C25F84;
+  color: #B6FFCE;
   font-size: 20px;
-  background-color: #2EF297;
+  background-color: #FF78B5;
   border-radius: 20px;
 }
 .cupons .cupom a:hover {
-  color: #F1C2F2;
+  color: #45CE73;
 }
 
 .contatos {
@@ -136,29 +176,6 @@ h1 {
 }
 .contatos .contato a img {
   width: 100px;
-}
-
-#menu {
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  background-color: #0B090D;
-  margin-right: 20px;
-  font-weight: 600;
-  font-size: 22px;
-}
-#menu .item-menu {
-  display: flex;
-  height: 47px;
-  width: 150px;
-}
-#menu .item-menu a {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
