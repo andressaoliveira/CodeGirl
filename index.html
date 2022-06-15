@@ -5,22 +5,55 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="images/ICON_TITLE.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="images/logo base.png">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <title>&lt;code girl/&gt;</title>
 </head>
 
 <body>
-    <nav id="nav" class="nav">
-        <object width="100%" height="100%" data="menu/menu.html"></object>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="menu">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/cupons">Descontos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/cursos">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contato">Contatos</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <nav id="nav-mobile" class="nav">
-        <object height="100%" data="menu/menu.html"></object>
-    </nav>
-    <div class="container">
-        <object width="100%" height="100%" data="home/home.html"></object>
+
+    <div class="principal">
+        <iframe id="inlineFrameExample" title="Inline Frame Example" src="home/home.html">
+		</iframe>
+        <!-- <img id="imagem-principal " src="../images/andressa.png " width="350px ">
+        <div id="apresentacao">
+            <div>
+                <p>Programadora e Professora de Desenvolvimento Web </p>
+                <p>Te ajudo a dar seus primeiros passos no mundo da programação</p>
+            </div>
+            <p>Mestre em Informática com foco em Machine Learning e Bacharel em Engenheira de Computação pela PUC Minas. Participei de várias atividades no meio acadêmico, como iniciação científica, monitoria e extensão universitária. Estagiei no Microsoft
+                Innovation Center, na CEMIG e no TCE-MG executando atividades na área de tecnologia da informação. Atualmente trabalho na <a href="https://www.dtidigital.com.br/ ">DTI Digital</a> como desenvolvedora full stack e na <a href="https://www.coderhouse.com.br/ ">Coder House</a>                como professora de desenvolvimento web. Possuo certificação PSM I e conhecimento em linguagens de programação, sistemas operacionais, aplicações de gerenciamento de projetos e banco de dados.
+            </p>
+        </div>
+        <div id="assinatura">
+            <span>Andressa Oliveira</span>
+            <img src="../images/COLOR_LOGO.png">
+        </div> -->
     </div>
 </body>
 

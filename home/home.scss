@@ -1,54 +1,53 @@
-#home {
-    overflow: auto;
-    height: 100%;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: "imagem" "apresentacao" "assinatura";
-    justify-items: center;
-    align-items: center;
-    #imagem-principal {
-        grid-area: imagem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #apresentacao {
-        grid-area: apresentacao;
-        font-size: 20px;
-        div {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 50px 0;
-        }
-        a {
-            color: $verde;
-            &:hover {
-                color: $verdeClaro;
-            }
-        }
-    }
-    #assinatura {
-        grid-area: assinatura;
-        display: flex;
-        justify-content: flex-end;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        span {
-            color: $verde;
-            font-size: 22px;
-        }
-        img {
-            width: 200px;
-        }
-    }
-}
-
-@media screen and (min-width: $desktop) {
-    #home {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "imagem apresentacao" "assinatura assinatura";
-    }
-}
+// #home {
+//     height: 100%;
+//     width: 100%;
+//     display: grid;
+//     grid-template-columns: auto;
+//     grid-template-rows: auto auto;
+//     grid-template-areas: "imagem" "apresentacao" "assinatura";
+//     justify-items: center;
+//     align-items: center;
+//     #imagem-principal {
+//         grid-area: imagem;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//     }
+//     #apresentacao {
+//         grid-area: apresentacao;
+//         font-size: 20px;
+//         div {
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             padding: 50px 0;
+//         }
+//         a {
+//             color: $verde;
+//             &:hover {
+//                 color: $verdeClaro;
+//             }
+//         }
+//     }
+//     #assinatura {
+//         grid-area: assinatura;
+//         display: flex;
+//         justify-content: flex-end;
+//         flex-direction: column;
+//         align-items: center;
+//         width: 100%;
+//         span {
+//             color: $verde;
+//             font-size: 22px;
+//         }
+//         img {
+//             width: 200px;
+//         }
+//     }
+// }
+// @media screen and (min-width: $desktop) {
+//     #home {
+//         grid-template-columns: repeat(2, 1fr);
+//         grid-template-areas: "imagem apresentacao" "assinatura assinatura";
+//     }
+// }

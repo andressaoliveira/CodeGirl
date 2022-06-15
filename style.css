@@ -4,6 +4,7 @@
   text-decoration: none;
   color: #FFC0E0;
   font-family: "Dosis", "Calibri", sans-serif;
+  border: none;
 }
 
 html {
@@ -11,125 +12,27 @@ html {
 }
 
 body {
-  overflow: hidden;
-  padding: 0 20px;
   background-color: #2B2B2B !important;
-  height: 100%;
-  display: grid;
-  grid-template-columns: auto max-content;
-  grid-template-areas: "container menu-mobile";
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 66px;
 }
-body #nav {
-  display: none;
-}
-body #nav-mobile {
-  grid-area: menu-mobile;
-  width: 50px;
-}
-body .nav .resposivel {
-  grid-area: menu-desktop;
-}
-body .container {
-  grid-area: container;
+body .principal {
   height: 100%;
   width: 100%;
 }
-
-@media screen and (min-width: 800px) {
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-  body #nav-mobile {
-    display: none;
-  }
-  body #nav {
-    display: flex;
-    height: 65px;
-  }
-}
-#menu-container {
-  width: 50px;
-  height: 100%;
-  font-size: 22px;
-  padding: 50px 0;
-}
-@media screen and (min-width: 800px) {
-  #menu-container {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0;
-  }
-  #menu-container .icon {
-    display: none;
-  }
-  #menu-container #itens-menu {
-    display: flex;
-    padding-right: 50px;
-  }
-  #menu-container #itens-menu a {
-    margin: 0 20px;
-  }
-  #menu-container #itens-menu a:hover {
-    color: #45CE73;
-  }
-}
-#home {
-  overflow: auto;
-  height: 100%;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto;
-  grid-template-areas: "imagem" "apresentacao" "assinatura";
-  justify-items: center;
-  align-items: center;
-}
-#home #imagem-principal {
-  grid-area: imagem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#home #apresentacao {
-  grid-area: apresentacao;
-  font-size: 20px;
-}
-#home #apresentacao div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px 0;
-}
-#home #apresentacao a {
-  color: #45CE73;
-}
-#home #apresentacao a:hover {
-  color: #B6FFCE;
-}
-#home #assinatura {
-  grid-area: assinatura;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  align-items: center;
+body .principal iframe {
   width: 100%;
-}
-#home #assinatura span {
-  color: #45CE73;
-  font-size: 22px;
-}
-#home #assinatura img {
-  width: 200px;
+  height: 100%;
 }
 
-@media screen and (min-width: 800px) {
-  #home {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "imagem apresentacao" "assinatura assinatura";
-  }
+#menu {
+  background-color: #2B2B2B;
 }
+
 #cupons {
   display: flex;
   flex-direction: row;
