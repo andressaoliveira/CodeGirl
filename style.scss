@@ -4,7 +4,7 @@
     margin: 0;
     text-decoration: none;
     color: $rosaClaro;
-    font-family: $fonte-padrao;
+    font-family: $fonte-padrao !important;
     border: none;
 }
 
@@ -23,10 +23,37 @@ body {
     .principal {
         height: 100%;
         width: 100%;
-        iframe {
-            width: 100%;
-            height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #apresentacao {
+            padding: 25px;
+            .titulo {
+                display: flex;
+                justify-content: center;
+            }
+            .texto {
+                a {
+                    color: $verde;
+                }
+            }
         }
+        #assinatura {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                width: 200px;
+                padding-bottom: 30px;
+            }
+        }
+    }
+}
+
+.nav-link {
+    color: $rosa !important;
+    &:hover {
+        color: $verde !important;
     }
 }
 
@@ -34,6 +61,6 @@ body {
 
 @import 'menu/menu.scss';
 @import 'home/home.scss';
-@import 'cupons/cupons.scss';
+@import 'descontos/descontos.scss';
 @import 'contato/contato.scss';
 @import 'cursos/cursos.scss';
