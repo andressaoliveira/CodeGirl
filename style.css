@@ -13,7 +13,7 @@ html {
 
 body {
   background-color: #2B2B2B !important;
-  height: fit-content;
+  height: calc(100% - 70px);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -21,11 +21,18 @@ body {
   top: 66px;
 }
 body .principal {
+  padding: 20px;
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+body .principal #imagem-principal {
+  max-width: 80%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 body .principal #apresentacao {
   padding: 25px;
@@ -37,14 +44,14 @@ body .principal #apresentacao .titulo {
 body .principal #apresentacao .texto a {
   color: #45CE73;
 }
-body .principal #assinatura {
+body .principal #footer {
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body .principal #assinatura img {
+body .principal #footer img {
   width: 200px;
-  padding-bottom: 30px;
 }
 
 .nav-link {
@@ -54,6 +61,22 @@ body .principal #assinatura img {
   color: #45CE73 !important;
 }
 
+@media screen and (min-width: 800px) {
+  .principal {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "imagem-principal apresentacao" "assinatura assinatura";
+  }
+  .principal #imagem-principal {
+    grid-area: imagem-principal;
+  }
+  .principal #apresentacao {
+    grid-area: apresentacao;
+  }
+  .principal #footer {
+    grid-area: assinatura;
+  }
+}
 #menu {
   background-color: #2B2B2B;
 }
