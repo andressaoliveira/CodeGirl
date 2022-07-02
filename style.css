@@ -20,6 +20,14 @@ html {
   color: blue;
 }
 
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.mr-auto {
+  margin-right: 0 !important;
+}
+
 body {
   background-color: #332649 !important;
   height: calc(100% - 70px);
@@ -65,6 +73,7 @@ body .principal #footer img {
 
 .nav-link {
   color: #FF78B5 !important;
+  font-size: 22px;
 }
 .nav-link:hover {
   color: #45CE73 !important;
@@ -86,10 +95,6 @@ body .principal #footer img {
     grid-area: assinatura;
   }
 }
-#menu {
-  background-color: #2B2B2B;
-}
-
 #descontos {
   display: flex;
   flex-direction: row;

@@ -21,6 +21,14 @@ html {
     color: blue
 }
 
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.mr-auto {
+    margin-right: 0 !important;
+}
+
 body {
     background-color: $roxo !important;
     height: calc(100% - 70px);
@@ -68,6 +76,7 @@ body {
 
 .nav-link {
     color: $rosa !important;
+    font-size: 22px;
     &:hover {
         color: $verde !important;
     }
@@ -90,7 +99,6 @@ body {
     }
 }
 
-@import 'menu/menu.scss';
 @import 'descontos/descontos.scss';
 @import 'contato/contato.scss';
 @import 'cursos/cursos.scss';
