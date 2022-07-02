@@ -12,8 +12,17 @@ html {
     height: 100%;
 }
 
+#menu {
+    background-color: $roxo !important;
+}
+
+.fill {
+    background-color: red;
+    color: blue
+}
+
 body {
-    background-color: $preto !important;
+    background-color: $roxo !important;
     height: calc(100% - 70px);
     width: 100%;
     display: flex;
