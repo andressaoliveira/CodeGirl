@@ -61,7 +61,7 @@ body .principal #footer img {
   color: #45CE73 !important;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 992px) {
   .principal {
     display: grid !important;
     grid-template-columns: 1fr 1fr;
@@ -126,18 +126,20 @@ body .principal #footer img {
 
 #contatos {
   display: flex;
+  flex-wrap: wrap;
+  height: 100%;
   flex-direction: row;
   justify-content: center;
-  padding-top: 300px;
+  align-items: center;
 }
 #contatos .contato {
-  padding: 50px;
+  padding: 20px;
   color: white;
   display: flex;
   margin: 15px 0;
 }
 #contatos .contato a img {
-  width: 100px;
+  width: 50px;
 }
 
 #cursos {
