@@ -5,15 +5,16 @@
     flex-wrap: wrap;
     padding-top: 50px;
     .cupom {
+        border-radius: 5px;
         padding: 20px 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        border-top: 20px solid $verde;
+        border-top: 30px solid $verde;
         background-color: $branco;
-        width: 250px;
-        height: 250px;
+        width: 230px;
+        height: 200px;
         margin: 10px;
         h1 {
             font-size: 24px;
