@@ -1,5 +1,11 @@
 const form = document.getElementById('cadastro');
 
+function limparFormulario() {
+    document.getElementById('inputNome').value = '';
+    document.getElementById('inputSobrenome').value = '';
+    document.getElementById('inputEmail').value = '';
+}
+
 form.addEventListener('submit', (event) => {
     event.preventDefault();
 
@@ -22,7 +28,7 @@ form.addEventListener('submit', (event) => {
 
     request.onreadystatechange = function() {
         if (this.readyState === XMLHttpRequest.DONE && this.status === 204) {
-            console.log('teste2');
+            limparFormulario();
             $('#alerta-cadastrado-sucesso').show();
         }
         if (this.status === 500) {
