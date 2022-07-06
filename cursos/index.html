@@ -54,9 +54,51 @@
         </div>
     </nav>
     <div class="container" id="cursos">
-        <h3>Vem novidades por aí</h3>
-        <h1>Aguarde...</h1>
+        <div class="texto">
+            <h2>Quer iniciar no mundo da programação?</h2>
+            <p>Faça seu cadastro e receba tudo em primeira mão.</p>
+        </div>
+        <div class="alertas">
+            <div class="alert alert-success" id="alerta-cadastrado-sucesso" role="alert" style="display:none;">
+                Cadastrado com sucesso!
+            </div>
+            <div class="alert alert-warning" id="alerta-usuario-existente" role="alert" style="display:none;">
+                Email já cadastrado!
+            </div>
+        </div>
+        <form id="cadastro" action="" method="POST">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <!-- <label for="inputNome">Nome</label> -->
+                    <input type="text" class="form-control" id="inputNome" placeholder="Nome" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <!-- <label for="inputSobrenome">Password</label> -->
+                    <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <!-- <label for="inputEmail4">Email</label> -->
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="checkNovidades">
+                    <label class="form-check-label" for="gridCheck">
+                  Receber novidades por e-mail
+                </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        <br><br><br>
+        <div id="footer">
+            <span>Andressa Oliveira</span>
+            <img src="../images/COLOR_LOGO.png">
+        </div>
     </div>
+
+    <script src="./cursos.js"></script>
 </body>
 
 </html>

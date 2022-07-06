@@ -1,42 +1,44 @@
 #descontos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-top: 50px;
-    .cupom {
-        border-radius: 5px;
-        padding: 20px 10px;
+    .cupons {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        border-top: 30px solid $verde;
-        background-color: $branco;
-        width: 230px;
-        height: 200px;
-        margin: 10px;
-        h1 {
-            font-size: 24px;
-            color: $rosa;
-            font-weight: 600;
-            text-align: center;
-        }
-        h2 {
-            font-size: 14px;
-            color: $preto;
-            text-align: center;
-        }
-        a {
-            text-decoration: none;
-            font-weight: 600;
-            padding: 0 15px;
-            color: $roxo;
-            font-size: 20px;
-            background-color: $rosa;
-            border-radius: 20px;
-            &:hover {
-                color: $verde;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        .cupom {
+            border-radius: 5px;
+            padding: 20px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 30px solid $verde;
+            background-color: $branco;
+            width: 230px;
+            height: 200px;
+            margin: 10px;
+            h1 {
+                font-size: 24px;
+                color: $rosa;
+                font-weight: 600;
+                text-align: center;
+            }
+            h2 {
+                font-size: 14px;
+                color: $preto;
+                text-align: center;
+            }
+            a {
+                text-decoration: none;
+                font-weight: 600;
+                padding: 0 15px;
+                color: $roxo;
+                font-size: 20px;
+                background-color: $rosa;
+                border-radius: 20px;
+                &:hover {
+                    color: $verde;
+                }
             }
         }
     }
