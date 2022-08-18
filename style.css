@@ -164,4 +164,25 @@ body #footer img {
   height: 70px;
 }
 
+#mentoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+#mentoria .texto {
+  padding-top: 20px;
+  text-align: center;
+}
+#mentoria .contato {
+  padding: 20px;
+  color: white;
+  display: flex;
+  margin: 15px 0;
+}
+#mentoria .contato a img {
+  width: 50px;
+}
+
 /*# sourceMappingURL=style.css.map */

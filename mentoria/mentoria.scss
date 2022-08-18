@@ -1,0 +1,22 @@
+#mentoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    .texto {
+        padding-top: 20px;
+        text-align: center;
+    }
+    .contato {
+        padding: 20px;
+        color: white;
+        display: flex;
+        margin: 15px 0;
+        a {
+            img {
+                width: 50px;
+            }
+        }
+    }
+}

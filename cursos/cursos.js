@@ -19,7 +19,7 @@ form.addEventListener('submit', (event) => {
         receberNovidades: document.getElementById('checkNovidades').checked
     });
 
-    var requestURL = 'https://codegirl.azurewebsites.net/Interessados';
+    var requestURL = 'https://localhost:7157/Interessados';
     var request = new XMLHttpRequest();
 
     request.open("POST", requestURL);
