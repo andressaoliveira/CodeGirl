@@ -203,7 +203,14 @@ body #footer img {
 #dicas .dica .titulo {
   display: flex;
   font-size: 25px;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+#dicas .dica .titulo b {
+  background-color: #B6FFCE;
+  color: #FF78B5;
+  border-radius: px;
+  padding: 0 3px;
+  font-weight: 600;
 }
 #dicas .dica .links {
   display: flex;

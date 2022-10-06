@@ -14,7 +14,14 @@
         .titulo {
             display: flex;
             font-size: 25px;
-            padding-bottom: 15px;
+            margin-bottom: 15px;
+            b {
+                background-color: $verdeClaro;
+                color: $rosa;
+                border-radius: px;
+                padding: 0 3px;
+                font-weight: 600;
+            }
         }
         .links {
             display: flex;
