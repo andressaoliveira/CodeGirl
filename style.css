@@ -192,6 +192,11 @@ body #footer img {
   justify-content: space-evenly;
   width: 100%;
 }
+#dicas .titulo {
+  display: flex;
+  flex-direction: column;
+  font-size: 45px;
+}
 #dicas .dica {
   padding: 20px;
   color: white;
@@ -200,17 +205,17 @@ body #footer img {
   margin: 15px 0;
   align-items: center;
 }
-#dicas .dica .titulo {
-  display: flex;
+#dicas .dica b {
   font-size: 25px;
-  margin-bottom: 15px;
-}
-#dicas .dica .titulo b {
+  display: flex;
+  flex-direction: column;
   background-color: #B6FFCE;
   color: #FF78B5;
-  border-radius: px;
-  padding: 0 3px;
+  border-radius: 2px;
+  padding: 0 5px;
   font-weight: 600;
+  align-items: center;
+  margin-bottom: 15px;
 }
 #dicas .dica .links {
   display: flex;
@@ -218,6 +223,8 @@ body #footer img {
   font-size: 20px;
 }
 #dicas .dica .links a {
+  display: flex;
+  align-items: center;
   margin: 5px 10px;
   text-decoration: none;
   font-weight: 600;
@@ -226,6 +233,7 @@ body #footer img {
   font-size: 20px;
   background-color: #FF78B5;
   border-radius: 20px;
+  height: 100%;
 }
 #dicas .dica .links a:hover {
   color: #45CE73;
