@@ -38,12 +38,16 @@ body .principal #imagem-principal {
   justify-content: center;
   padding: 20px;
 }
-body .principal #apresentacao {
-  padding: 25px;
+body .principal #apresentacao .cabecalho {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
-body .principal #apresentacao .titulo {
+body .principal #apresentacao .cabecalho .titulo {
   display: flex;
   justify-content: center;
+  padding-bottom: 20px;
+  text-align: center;
 }
 body .principal #apresentacao .texto a {
   color: #45CE73;

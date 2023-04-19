@@ -1,5 +1,8 @@
 //sass style.scss style.css --watch
+//npm install -g sass
+
 @import "cores.scss";
+
 * {
     padding: 0;
     margin: 0;
@@ -25,6 +28,7 @@ body {
     flex-direction: column;
     position: absolute;
     top: 66px;
+
     .principal {
         padding: 20px;
         height: 100%;
@@ -32,18 +36,28 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+
         #imagem-principal {
             width: 70%;
             display: flex;
             justify-content: center;
             padding: 20px;
         }
+
         #apresentacao {
-            padding: 25px;
-            .titulo {
+            .cabecalho {
                 display: flex;
-                justify-content: center;
+                flex-direction: column;
+                padding: 20px;
+
+                .titulo {
+                    display: flex;
+                    justify-content: center;
+                    padding-bottom: 20px;
+                    text-align: center;
+                }
             }
+
             .texto {
                 a {
                     color: $verde;
@@ -51,11 +65,13 @@ body {
             }
         }
     }
+
     #footer {
         padding: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
+
         img {
             width: 200px;
         }
@@ -65,6 +81,7 @@ body {
 .nav-link {
     color: $rosa !important;
     font-size: 22px;
+
     &:hover {
         color: $verde !important;
     }
@@ -75,13 +92,16 @@ body {
         display: grid !important;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "apresentacao imagem-principal" "assinatura assinatura";
+
         #imagem-principal {
             grid-area: imagem-principal;
             width: 100% !important;
         }
+
         #apresentacao {
             grid-area: apresentacao;
         }
+
         #footer {
             grid-area: assinatura;
         }
