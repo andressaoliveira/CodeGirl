@@ -14,7 +14,7 @@ form.addEventListener('submit', (event) => {
 
     const contato = JSON.stringify({
         nome: document.getElementById('inputNome').value,
-        sobreNome: document.getElementById('inputSobrenome').value,
+        sobrenome: document.getElementById('inputSobrenome').value,
         email: document.getElementById('inputEmail').value,
         receberNovidades: document.getElementById('checkNovidades').checked
     });
