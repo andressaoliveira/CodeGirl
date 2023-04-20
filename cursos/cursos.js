@@ -19,7 +19,7 @@ form.addEventListener('submit', (event) => {
         receberNovidades: document.getElementById('checkNovidades').checked
     });
 
-    var requestURL = 'https://localhost:7157/Interessados';
+    var requestURL = 'https://code-girl-api.vercel.app/interessados';
     var request = new XMLHttpRequest();
 
     request.open("POST", requestURL);
@@ -27,7 +27,8 @@ form.addEventListener('submit', (event) => {
     request.send(contato);
 
     request.onreadystatechange = function() {
-        if (this.readyState === XMLHttpRequest.DONE && this.status === 204) {
+        console.log(this.readyState, XMLHttpRequest.DONE, this.status);
+        if (this.readyState === XMLHttpRequest.DONE && this.status === 201) {
             limparFormulario();
             $('#alerta-cadastrado-sucesso').show();
         }
