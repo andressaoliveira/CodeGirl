@@ -27,7 +27,6 @@ form.addEventListener('submit', (event) => {
     request.send(contato);
 
     request.onreadystatechange = function() {
-        console.log(this.readyState, XMLHttpRequest.DONE, this.status);
         if (this.readyState === XMLHttpRequest.DONE && this.status === 201) {
             limparFormulario();
             $('#alerta-cadastrado-sucesso').show();
