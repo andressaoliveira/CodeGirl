@@ -18,7 +18,7 @@ form.addEventListener('submit', (event) => {
         email: document.getElementById('inputEmail').value,
         receberNovidades: document.getElementById('checkNovidades').checked
     });
-
+    
     var requestURL = 'https://code-girl-api.vercel.app/interessados';
     var request = new XMLHttpRequest();
 
