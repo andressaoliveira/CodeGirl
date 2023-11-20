@@ -188,6 +188,9 @@ body #footer img {
 #mentoria .contato a img {
   width: 50px;
 }
+#mentoria .lista .passo {
+  color: #45CE73;
+}
 
 #dicas {
   display: flex;
