@@ -2,7 +2,7 @@ const form = document.getElementById('cadastro');
 
 function limparFormulario() {
     document.getElementById('inputNome').value = '';
-    document.getElementById('inputSobrenome').value = '';
+    document.getElementById('inputTelefone').value = '';
     document.getElementById('inputEmail').value = '';
 }
 
@@ -14,7 +14,7 @@ form.addEventListener('submit', (event) => {
 
     const contato = JSON.stringify({
         nome: document.getElementById('inputNome').value,
-        sobrenome: document.getElementById('inputSobrenome').value,
+        telefone: document.getElementById('inputTelefone').value,
         email: document.getElementById('inputEmail').value,
         receberNovidades: document.getElementById('checkNovidades').checked
     });
