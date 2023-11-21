@@ -192,6 +192,9 @@ body #footer img {
 #mentoria .contato a img {
   width: 50px;
 }
+#mentoria .lista {
+  padding: 0 20px;
+}
 #mentoria .lista .passo {
   color: #45CE73;
 }
