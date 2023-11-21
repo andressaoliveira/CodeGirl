@@ -70,6 +70,10 @@ body #footer img {
   color: #45CE73 !important;
 }
 
+.navbar-toggler {
+  background-color: #FFD2EB;
+}
+
 @media only screen and (min-width: 992px) {
   .principal {
     display: grid !important;

@@ -87,6 +87,10 @@ body {
     }
 }
 
+.navbar-toggler{
+    background-color: $rosaClaro;
+}
+
 @media only screen and (min-width: $desktop) {
     .principal {
         display: grid !important;
