@@ -16,7 +16,8 @@
     font-family: $fonte-padrao !important;
     font-size: 14px;
     border: none;
-    font-weight: 400;;
+    font-weight: 400;
+    ;
 }
 
 #grid-principal {
@@ -48,13 +49,18 @@
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            padding: 0 25px;
+            padding: 0 25px 25px 25px;
 
         }
 
         #imagem-principal {
             grid-area: imagem;
+            align-self: flex-end;
 
+            img {
+                width: 100%;
+                display: flex;
+            }
         }
     }
 
@@ -70,9 +76,11 @@
         grid-area: cursos;
         overflow: hidden;
     }
+
     #mentoria {
         grid-area: mentoria;
     }
+
     #comentarios {
         grid-area: comentarios;
     }

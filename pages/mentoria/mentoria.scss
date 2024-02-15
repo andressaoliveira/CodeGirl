@@ -12,16 +12,16 @@
     }
 
     ul {
-        width: 500px;
+        width: 350px;
     }
 
     .timeline::before {
         content: "";
         position: fixed;
-        height: 60%;
+        height: 56%;
         width: 3px;
         left: 50%;
-        top: 12%;
+        top: 15%;
         background-color: $rosa;
     }
 

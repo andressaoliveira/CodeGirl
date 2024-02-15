@@ -93,15 +93,15 @@
   padding: 10px 0;
 }
 #mentoria ul {
-  width: 500px;
+  width: 350px;
 }
 #mentoria .timeline::before {
   content: "";
   position: fixed;
-  height: 60%;
+  height: 56%;
   width: 3px;
   left: 50%;
-  top: 12%;
+  top: 15%;
   background-color: #FF78B5;
 }
 #mentoria .timeline {
@@ -236,10 +236,15 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 0 25px;
+  padding: 0 25px 25px 25px;
 }
 #grid-principal #principal #imagem-principal {
   grid-area: imagem;
+  align-self: flex-end;
+}
+#grid-principal #principal #imagem-principal img {
+  width: 100%;
+  display: flex;
 }
 #grid-principal #sobre {
   grid-area: sobre;
