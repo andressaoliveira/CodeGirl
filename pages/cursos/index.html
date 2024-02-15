@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="cursos">
+        <h2 class="titulo">
+            <span class="simbolo">&lt;</span>Cursos<span class="simbolo">&gt;</span>
+        </h2>
+
+        <h2 id="titulo">Entre para a Próxima Turma de Programação! 💻✨</h2>
+
+        <p class="texto">
+            Preparada para transformar sua jornada na programação? A próxima turma está a caminho, e você não vaiquerer
+            ficar de fora dessa experiência única!
+        </p>
+        <br>
+        <p class="texto">
+            Inscreva-se agora na lista de espera e garanta seu lugar para aprender, evoluir e conquistar novos
+            horizontes no mundo da tecnologia.
+        </p>
+
+        <div class="alertas">
+            <div class="alert alert-success" id="alerta-cadastrado-sucesso" role="alert" style="display:none;">
+                Cadastrado com sucesso!
+            </div>
+            <div class="alert alert-warning" id="alerta-usuario-existente" role="alert" style="display:none;">
+                Email já cadastrado!
+            </div>
+        </div>
+
+        <form action method="POST">
+            <div id="cadastro">
+                <div class="form-group">
+                    <div class="form-item">
+                        <label for="inputNome">Nome Completo</label>
+                        <input type="text" class="form-control" id="inputNome" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="inputTelefone">WhatsApp</label>
+                        <input type="text" class="form-control" id="inputTelefone" placeholder="(xx) xxxxx-xxxx"
+                            required>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="nome@email.com" required>
+                </div>
+                <div>
+                    <div>
+                        <input type="checkbox" id="checkNovidades" checked>
+                        <label for="gridCheck">
+                            Receber novidades por e-mail
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <h2 class=" titulo">
+            <span class="simbolo">&lt;/</span>Cursos<span class="simbolo">&gt;</span>
+        </h2>
+    </section>
+</body>
+
+</html>

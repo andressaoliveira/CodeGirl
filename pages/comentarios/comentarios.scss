@@ -1,0 +1,40 @@
+@import "../../cores.scss";
+
+#comentarios {
+    .card {
+        display: flex;
+        flex-direction: row;
+        width: 300px;
+        height: 115px;
+        background-color: $branco;
+        border-radius: 20px;
+        padding: 10px 20px;
+        margin: 10px 0;
+
+        img.foto {
+            padding-right: 25px;
+            width: 70px;
+        }
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .nome{
+                font-weight: 700;
+            }
+
+            .texto{
+            }
+        }
+
+        p {
+            color: $preto;
+        }
+
+        img{
+            width: 24px;
+        }
+    }
+}

@@ -1,0 +1,110 @@
+@import "../../cores.scss";
+
+#mentoria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .subtitulo {
+        font-size: 24px;
+        font-weight: 700;
+        padding: 10px 0;
+    }
+
+    ul {
+        width: 500px;
+    }
+
+    .timeline::before {
+        content: "";
+        position: fixed;
+        height: 60%;
+        width: 3px;
+        left: 50%;
+        top: 12%;
+        background-color: $rosa;
+    }
+
+    .timeline {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    li {
+        display: flex;
+        padding-bottom: 50px;
+    }
+
+    li:nth-child(even) {
+        justify-content: flex-start;
+
+        .item {
+            flex-direction: row-reverse;
+
+            .marcador {
+                left: 23px;
+            }
+
+            .texto {
+                text-align: end;
+            }
+        }
+    }
+
+    li:nth-child(odd) {
+        justify-content: flex-end;
+
+        .item {
+            .marcador {
+                right: 22px;
+            }
+        }
+    }
+
+    .item {
+        display: flex;
+        width: 50%;
+
+        .marcador {
+            background-color: $rosa;
+            margin: 0 5px;
+            color: $branco;
+            min-width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 800;
+            position: relative;
+            // right: 37px;
+            align-self: center;
+            border-radius: 50%;
+        }
+
+        .texto {
+            h3 {
+                color: $rosa;
+                font-weight: 800;
+            }
+        }
+
+    }
+
+    .link {
+        display: flex;
+        background-color: $rosa;
+        color: $branco;
+        padding: 10px 20px;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: 700;
+        justify-content: center;
+        margin: 13px 0;
+
+        img {
+            padding-right: 10px;
+        }
+    }
+}

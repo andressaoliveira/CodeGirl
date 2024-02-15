@@ -2,71 +2,83 @@
 //npm install -g sass
 
 @import "cores.scss";
+@import "pages/sobre/sobre.scss";
+@import "pages/cupons/cupons.scss";
+@import "pages/cursos/cursos.scss";
+@import "pages/mentoria/mentoria.scss";
+@import "pages/comentarios/comentarios.scss";
 
 * {
     padding: 0;
     margin: 0;
     text-decoration: none;
-    color: $rosaClaro;
+    color: $branco;
     font-family: $fonte-padrao !important;
+    font-size: 14px;
     border: none;
+    font-weight: 400;;
 }
 
-html {
-    height: 100%;
-}
+#grid-principal {
+    display: grid;
+    grid-template-areas: "principal" "sobre" "cupons" "cursos" "mentoria" "comentarios" "footer";
+    background-color: $roxoEscuro;
 
-#menu {
-    background-color: $roxo !important;
-}
+    #principal {
+        display: grid;
+        grid-area: principal;
+        grid-template-areas: "titulo imagem" "texto imagem";
+        grid-template-columns: 3fr 2fr;
+        background-color: $roxo;
 
-body {
-    background-color: $roxo !important;
-    height: calc(100% - 70px);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 66px;
 
-    .principal {
-        padding: 20px;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        #imagem-principal {
-            width: 70%;
+        #titulo-principal {
+            grid-area: titulo;
+            color: $rosa;
+            font-size: 24px;
             display: flex;
             justify-content: center;
-            padding: 20px;
+            align-items: flex-end;
+            padding: 25px;
+            font-weight: 700;
         }
-                
-        #apresentacao {
-            .cabecalho {
-                display: flex;
-                flex-direction: column;
-                padding: 20px;
 
-                .titulo {
-                    display: flex;
-                    justify-content: center;
-                    padding-bottom: 20px;
-                    text-align: center;
-                }
-            }
+        #texto-principal {
+            grid-area: texto;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0 25px;
 
-            .texto {
-                a {
-                    color: $verde;
-                }
-            }
+        }
+
+        #imagem-principal {
+            grid-area: imagem;
+
         }
     }
 
+    #sobre {
+        grid-area: sobre;
+    }
+
+    #cupons {
+        grid-area: cupons;
+    }
+
+    #cursos {
+        grid-area: cursos;
+        overflow: hidden;
+    }
+    #mentoria {
+        grid-area: mentoria;
+    }
+    #comentarios {
+        grid-area: comentarios;
+    }
+
     #footer {
+        grid-area: footer;
         padding: 20px;
         display: flex;
         flex-direction: column;
@@ -78,42 +90,20 @@ body {
     }
 }
 
-.nav-link {
-    color: $rosa !important;
-    font-size: 22px;
+.secao {
+    width: -webkit-fill-available;
+    padding: 15px 25px;
 
-    &:hover {
-        color: $verde !important;
+    iframe {
+        width: inherit;
     }
 }
 
-.navbar-toggler{
-    background-color: $rosaClaro;
-}
+.titulo {
+    color: $rosa;
+    font-size: 17px;
 
-@media only screen and (min-width: $desktop) {
-    .principal {
-        display: grid !important;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "apresentacao imagem-principal" "assinatura assinatura";
-
-        #imagem-principal {
-            grid-area: imagem-principal;
-            width: 100% !important;
-        }
-
-        #apresentacao {
-            grid-area: apresentacao;
-        }
-
-        #footer {
-            grid-area: assinatura;
-        }
+    .simbolo {
+        color: $verde;
     }
 }
-
-@import 'descontos/descontos.scss';
-@import 'contato/contato.scss';
-@import 'cursos/cursos.scss';
-@import 'mentoria/mentoria.scss';
-@import 'dicas/dicas.scss';

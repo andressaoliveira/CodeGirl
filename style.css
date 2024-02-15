@@ -1,256 +1,286 @@
-* {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  color: #FFD2EB;
-  font-family: "Dosis", "Calibri", sans-serif !important;
-  border: none;
-}
-
-html {
-  height: 100%;
-}
-
-#menu {
-  background-color: #332649 !important;
-}
-
-body {
-  background-color: #332649 !important;
-  height: calc(100% - 70px);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 66px;
-}
-body .principal {
-  padding: 20px;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-body .principal #imagem-principal {
-  width: 70%;
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-}
-body .principal #apresentacao .cabecalho {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-body .principal #apresentacao .cabecalho .titulo {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 20px;
-  text-align: center;
-}
-body .principal #apresentacao .texto a {
+#cupons .simbolo {
   color: #45CE73;
 }
-body #footer {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-body #footer img {
+#cupons .card {
   width: 200px;
-}
-
-.nav-link {
-  color: #FF78B5 !important;
-  font-size: 22px;
-}
-.nav-link:hover {
-  color: #45CE73 !important;
-}
-
-.navbar-toggler {
-  background-color: #FFD2EB;
-}
-
-@media only screen and (min-width: 992px) {
-  .principal {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "apresentacao imagem-principal" "assinatura assinatura";
-  }
-  .principal #imagem-principal {
-    grid-area: imagem-principal;
-    width: 100% !important;
-  }
-  .principal #apresentacao {
-    grid-area: apresentacao;
-  }
-  .principal #footer {
-    grid-area: assinatura;
-  }
-}
-#descontos .cupons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-top: 50px;
-}
-#descontos .cupons .cupom {
-  border-radius: 5px;
-  padding: 20px 10px;
+  height: 250px;
+  background-color: #2B2D42;
+  border-radius: 20px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: space-between;
-  border-top: 30px solid #45CE73;
-  background-color: #FFFFFF;
-  width: 230px;
-  height: 200px;
-  margin: 10px;
+  margin: 10px 0;
 }
-#descontos .cupons .cupom h1 {
+#cupons .card h2 {
   font-size: 24px;
+  font-weight: 700;
   color: #FF78B5;
-  font-weight: 600;
+}
+#cupons .card div {
   text-align: center;
 }
-#descontos .cupons .cupom h2 {
-  font-size: 14px;
-  color: #2B2B2B;
-  text-align: center;
-}
-#descontos .cupons .cupom a {
-  text-decoration: none;
-  font-weight: 600;
-  padding: 0 15px;
-  color: #332649;
-  font-size: 20px;
-  background-color: #FF78B5;
-  border-radius: 20px;
-}
-#descontos .cupons .cupom a:hover {
-  color: #45CE73;
-}
-
-#contatos {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100%;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-#contatos .contato {
-  padding: 20px;
-  color: white;
-  display: flex;
-  margin: 15px 0;
-}
-#contatos .contato a img {
-  width: 50px;
+#cupons .card .link {
+  background-color: #45CE73;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 #cursos {
+  overflow: hidden;
+  background-color: #202136;
+}
+#cursos .simbolo {
+  color: #45CE73;
+}
+#cursos #titulo {
+  padding-top: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+#cursos #cadastro {
+  padding: 10px;
+  background-color: #2B2D42;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+#cursos #cadastro .form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#cursos #cadastro .form-group div {
+  width: 50%;
+}
+#cursos #cadastro .form-group :first-child {
+  margin-right: 20px;
+}
+#cursos #cadastro .form-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
+  margin-bottom: 10px;
+}
+#cursos #cadastro .form-item label {
+  color: #FF78B5;
+  padding-bottom: 5px;
+}
+#cursos #cadastro .form-item input {
+  height: 28px;
+  border-radius: 5px;
+  padding: 5px 10px;
 }
 #cursos button {
+  height: 40px;
+  border-radius: 50px;
+  background-color: #45CE73;
   width: 100%;
-}
-#cursos .texto {
-  padding-top: 20px;
-  text-align: center;
-}
-#cursos .alertas {
-  height: 70px;
+  margin: 10px 0;
 }
 
 #mentoria {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-}
-#mentoria .texto {
-  padding-top: 20px;
-  text-align: center;
-}
-#mentoria .contato {
-  padding: 20px;
-  color: white;
-  display: flex;
-  margin: 15px 0;
-}
-#mentoria .contato a img {
-  width: 50px;
-}
-#mentoria .lista {
-  padding: 0 20px;
-}
-#mentoria .lista .passo {
-  color: #45CE73;
-}
-
-#dicas {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-}
-#dicas .titulo {
-  display: flex;
-  flex-direction: column;
-  font-size: 45px;
-}
-#dicas .dica {
-  padding: 20px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  margin: 15px 0;
-  align-items: center;
-}
-#dicas .dica b {
-  font-size: 25px;
-  display: flex;
-  flex-direction: column;
-  background-color: #B6FFCE;
-  color: #FF78B5;
-  border-radius: 2px;
-  padding: 0 5px;
-  font-weight: 600;
-  align-items: center;
-  margin-bottom: 15px;
-}
-#dicas .dica .links {
-  display: flex;
-  align-items: center;
-  font-size: 20px;
-  flex-wrap: wrap;
   justify-content: center;
 }
-#dicas .dica .links a {
+#mentoria .subtitulo {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px 0;
+}
+#mentoria ul {
+  width: 500px;
+}
+#mentoria .timeline::before {
+  content: "";
+  position: fixed;
+  height: 60%;
+  width: 3px;
+  left: 50%;
+  top: 12%;
+  background-color: #FF78B5;
+}
+#mentoria .timeline {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+#mentoria li {
+  display: flex;
+  padding-bottom: 50px;
+}
+#mentoria li:nth-child(even) {
+  justify-content: flex-start;
+}
+#mentoria li:nth-child(even) .item {
+  flex-direction: row-reverse;
+}
+#mentoria li:nth-child(even) .item .marcador {
+  left: 23px;
+}
+#mentoria li:nth-child(even) .item .texto {
+  text-align: end;
+}
+#mentoria li:nth-child(odd) {
+  justify-content: flex-end;
+}
+#mentoria li:nth-child(odd) .item .marcador {
+  right: 22px;
+}
+#mentoria .item {
+  display: flex;
+  width: 50%;
+}
+#mentoria .item .marcador {
+  background-color: #FF78B5;
+  margin: 0 5px;
+  color: #FFFFFF;
+  min-width: 35px;
+  height: 35px;
   display: flex;
   align-items: center;
-  margin: 5px 10px;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 0 15px;
-  color: #332649;
+  justify-content: center;
   font-size: 20px;
-  background-color: #FF78B5;
-  border-radius: 20px;
+  font-weight: 800;
+  position: relative;
+  align-self: center;
+  border-radius: 50%;
 }
-#dicas .dica .links a:hover {
+#mentoria .item .texto h3 {
+  color: #FF78B5;
+  font-weight: 800;
+}
+#mentoria .link {
+  display: flex;
+  background-color: #FF78B5;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  justify-content: center;
+  margin: 13px 0;
+}
+#mentoria .link img {
+  padding-right: 10px;
+}
+
+#comentarios .card {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  height: 115px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 10px 0;
+}
+#comentarios .card img.foto {
+  padding-right: 25px;
+  width: 70px;
+}
+#comentarios .card .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#comentarios .card .info .nome {
+  font-weight: 700;
+}
+#comentarios .card p {
+  color: #2B2B2B;
+}
+#comentarios .card img {
+  width: 24px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "Dosis", "Calibri", sans-serif !important;
+  font-size: 14px;
+  border: none;
+  font-weight: 400;
+}
+
+#grid-principal {
+  display: grid;
+  grid-template-areas: "principal" "sobre" "cupons" "cursos" "mentoria" "comentarios" "footer";
+  background-color: #202136;
+}
+#grid-principal #principal {
+  display: grid;
+  grid-area: principal;
+  grid-template-areas: "titulo imagem" "texto imagem";
+  grid-template-columns: 3fr 2fr;
+  background-color: #332649;
+}
+#grid-principal #principal #titulo-principal {
+  grid-area: titulo;
+  color: #FF78B5;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 25px;
+  font-weight: 700;
+}
+#grid-principal #principal #texto-principal {
+  grid-area: texto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 25px;
+}
+#grid-principal #principal #imagem-principal {
+  grid-area: imagem;
+}
+#grid-principal #sobre {
+  grid-area: sobre;
+}
+#grid-principal #cupons {
+  grid-area: cupons;
+}
+#grid-principal #cursos {
+  grid-area: cursos;
+  overflow: hidden;
+}
+#grid-principal #mentoria {
+  grid-area: mentoria;
+}
+#grid-principal #comentarios {
+  grid-area: comentarios;
+}
+#grid-principal #footer {
+  grid-area: footer;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#grid-principal #footer img {
+  width: 200px;
+}
+
+.secao {
+  width: -webkit-fill-available;
+  padding: 15px 25px;
+}
+.secao iframe {
+  width: inherit;
+}
+
+.titulo {
+  color: #FF78B5;
+  font-size: 17px;
+}
+.titulo .simbolo {
   color: #45CE73;
 }
 
