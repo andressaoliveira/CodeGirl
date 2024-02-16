@@ -1,3 +1,10 @@
+#sobre {
+  background-color: #202136;
+}
+
+#cupons {
+  background-color: #202136;
+}
 #cupons .simbolo {
   color: #45CE73;
 }
@@ -93,6 +100,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #202136;
 }
 #mentoria .subtitulo {
   font-size: 24px;
@@ -184,6 +192,9 @@
   color: #45CE73;
 }
 
+#comentarios {
+  background-color: #202136;
+}
 #comentarios .card {
   display: flex;
   flex-direction: row;
@@ -233,7 +244,16 @@
   font-weight: 400;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(images/background_roxo.png);
+  background-repeat: repeat;
+}
+
 #grid-principal {
+  max-width: 650px;
   display: grid;
   grid-template-areas: "principal" "sobre" "cupons" "cursos" "mentoria" "comentarios" "footer";
   background-color: #202136;

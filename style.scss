@@ -17,10 +17,18 @@
     font-size: 14px;
     border: none;
     font-weight: 400;
-    ;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/background_roxo.png);
+    background-repeat: repeat;
 }
 
 #grid-principal {
+    max-width: 650px;
     display: grid;
     grid-template-areas: "principal" "sobre" "cupons" "cursos" "mentoria" "comentarios" "footer";
     background-color: $roxoEscuro;
