@@ -28,7 +28,7 @@
     #principal {
         display: grid;
         grid-area: principal;
-        grid-template-areas: "titulo imagem" "texto imagem";
+        grid-template-areas: "titulo titulo" "texto imagem";
         grid-template-columns: 3fr 2fr;
         background-color: $roxo;
 
@@ -48,9 +48,8 @@
             grid-area: texto;
             display: flex;
             justify-content: center;
-            align-items: flex-start;
+            align-items: center;
             padding: 0 25px 25px 25px;
-
         }
 
         #imagem-principal {
