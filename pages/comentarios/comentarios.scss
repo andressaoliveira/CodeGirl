@@ -2,48 +2,54 @@
 
 #comentarios {
     background-color: $roxoEscuro;
-    .card {
+
+    .cards {
         display: flex;
         flex-direction: row;
-        width: 300px;
-        height: 115px;
-        background-color: $branco;
-        border-radius: 20px;
-        padding: 10px 20px;
-        margin: 10px 0;
-
-        img.foto {
-            padding-right: 25px;
-            width: 55px;
-            height: 60px;
-            align-self: center;
-        }
-
-        .info {
+        .card {
             display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
+            flex-direction: row;
+            width: 300px;
+            height: 115px;
+            background-color: $branco;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin: 10px 20px 10px 0;
 
-            .nome {
-                font-weight: 700;
+            img.foto {
+                padding-right: 25px;
+                width: 55px;
+                height: 60px;
+                align-self: center;
             }
 
-            .link {
-                color: $rosa;
-                width: fit-content;
+            .info {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                .link {
+                    color: $rosa;
+                    width: fit-content;
+                }
+
+                .link:first-child {
+                    color: $preto;
+                    font-weight: 700;
+                }
+
+                .link:hover {
+                    color: $verde;
+                }
             }
 
-            .link:hover {
-                color: $verde;
+            p {
+                color: $preto;
             }
-        }
 
-        p {
-            color: $preto;
-        }
-
-        img {
-            width: 24px;
+            img {
+                width: 24px;
+            }
         }
     }
 }

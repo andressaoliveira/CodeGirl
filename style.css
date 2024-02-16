@@ -195,7 +195,11 @@
 #comentarios {
   background-color: #202136;
 }
-#comentarios .card {
+#comentarios .cards {
+  display: flex;
+  flex-direction: row;
+}
+#comentarios .cards .card {
   display: flex;
   flex-direction: row;
   width: 300px;
@@ -203,33 +207,34 @@
   background-color: #FFFFFF;
   border-radius: 20px;
   padding: 10px 20px;
-  margin: 10px 0;
+  margin: 10px 20px 10px 0;
 }
-#comentarios .card img.foto {
+#comentarios .cards .card img.foto {
   padding-right: 25px;
   width: 55px;
   height: 60px;
   align-self: center;
 }
-#comentarios .card .info {
+#comentarios .cards .card .info {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-#comentarios .card .info .nome {
-  font-weight: 700;
-}
-#comentarios .card .info .link {
+#comentarios .cards .card .info .link {
   color: #FF78B5;
   width: fit-content;
 }
-#comentarios .card .info .link:hover {
+#comentarios .cards .card .info .link:first-child {
+  color: #2B2B2B;
+  font-weight: 700;
+}
+#comentarios .cards .card .info .link:hover {
   color: #45CE73;
 }
-#comentarios .card p {
+#comentarios .cards .card p {
   color: #2B2B2B;
 }
-#comentarios .card img {
+#comentarios .cards .card img {
   width: 24px;
 }
 
@@ -315,6 +320,9 @@
 }
 #grid-principal #footer img {
   width: 200px;
+}
+#grid-principal #footer a:hover {
+  color: #FF78B5;
 }
 
 .secao {
