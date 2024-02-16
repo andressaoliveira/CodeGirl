@@ -15,13 +15,19 @@
         width: 350px;
     }
 
+    .container{
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
     .timeline::before {
         content: "";
-        position: fixed;
-        height: calc(100em - 490px);
+        position: absolute;
+        height: 80%;
         width: 3px;
         left: 50%;
-        top: 12%;
+        top: 8%;
         background-color: $rosa;
     }
 

@@ -102,13 +102,18 @@
 #mentoria ul {
   width: 350px;
 }
+#mentoria .container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
 #mentoria .timeline::before {
   content: "";
-  position: fixed;
-  height: calc(100em - 490px);
+  position: absolute;
+  height: 80%;
   width: 3px;
   left: 50%;
-  top: 12%;
+  top: 8%;
   background-color: #FF78B5;
 }
 #mentoria .timeline {
