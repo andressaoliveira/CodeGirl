@@ -61,5 +61,10 @@
         background-color: $verde;
         width: 100%;
         margin: 10px 0;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        color: $rosa;
     }
 }

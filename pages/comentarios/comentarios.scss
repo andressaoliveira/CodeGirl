@@ -13,19 +13,27 @@
 
         img.foto {
             padding-right: 25px;
-            width: 70px;
+            width: 55px;
+            height: 60px;
+            align-self: center;
         }
 
-        .info{
+        .info {
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
 
-            .nome{
+            .nome {
                 font-weight: 700;
             }
 
-            .texto{
+            .link {
+                color: $rosa;
+                width: fit-content;
+            }
+
+            .link:hover {
+                color: $verde;
             }
         }
 
@@ -33,7 +41,7 @@
             color: $preto;
         }
 
-        img{
+        img {
             width: 24px;
         }
     }

@@ -18,10 +18,10 @@
     .timeline::before {
         content: "";
         position: fixed;
-        height: 56%;
+        height: calc(100em - 490px);
         width: 3px;
         left: 50%;
-        top: 15%;
+        top: 12%;
         background-color: $rosa;
     }
 
@@ -105,6 +105,12 @@
 
         img {
             padding-right: 10px;
+        }
+    }
+
+    .link:hover {
+        span {
+            color: $verde;
         }
     }
 }

@@ -29,6 +29,9 @@
   font-size: 16px;
   font-weight: 700;
 }
+#cupons .card .link:hover {
+  color: #FF78B5;
+}
 
 #cursos {
   overflow: hidden;
@@ -80,6 +83,10 @@
   background-color: #45CE73;
   width: 100%;
   margin: 10px 0;
+  cursor: pointer;
+}
+#cursos button:hover {
+  color: #FF78B5;
 }
 
 #mentoria {
@@ -98,10 +105,10 @@
 #mentoria .timeline::before {
   content: "";
   position: fixed;
-  height: 56%;
+  height: calc(100em - 490px);
   width: 3px;
   left: 50%;
-  top: 15%;
+  top: 12%;
   background-color: #FF78B5;
 }
 #mentoria .timeline {
@@ -168,6 +175,9 @@
 #mentoria .link img {
   padding-right: 10px;
 }
+#mentoria .link:hover span {
+  color: #45CE73;
+}
 
 #comentarios .card {
   display: flex;
@@ -181,7 +191,9 @@
 }
 #comentarios .card img.foto {
   padding-right: 25px;
-  width: 70px;
+  width: 55px;
+  height: 60px;
+  align-self: center;
 }
 #comentarios .card .info {
   display: flex;
@@ -190,6 +202,13 @@
 }
 #comentarios .card .info .nome {
   font-weight: 700;
+}
+#comentarios .card .info .link {
+  color: #FF78B5;
+  width: fit-content;
+}
+#comentarios .card .info .link:hover {
+  color: #45CE73;
 }
 #comentarios .card p {
   color: #2B2B2B;
