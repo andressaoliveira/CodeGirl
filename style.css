@@ -362,6 +362,9 @@
 #grid-principal #footer img {
   width: 200px;
 }
+#grid-principal #footer a {
+  color: #FFFFFF;
+}
 #grid-principal #footer a:hover {
   color: #FF78B5;
 }
