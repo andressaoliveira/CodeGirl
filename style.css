@@ -232,8 +232,8 @@
 #comentarios .cards .card {
   display: flex;
   flex-direction: row;
-  min-width: 300px;
-  height: 115px;
+  min-width: 250px;
+  height: 130px;
   background-color: #FFFFFF;
   border-radius: 20px;
   padding: 10px 20px;
