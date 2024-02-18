@@ -1,0 +1,30 @@
+@import "../cores.scss";
+
+#menu{
+    height: 60px;
+    width: 650px;
+    display: flex;
+    position: fixed;
+    background-color: $roxoEscuro;
+}
+.nav-link {
+    color: $rosa !important;
+    font-size: 22px;
+
+    &:hover {
+        color: $verde !important;
+    }
+}
+
+.navbar{
+    padding: 0;
+}
+
+.navbar-toggler {
+    background-color: $rosaClaro;
+}
+
+.navbar-collapse{
+    background-color: $roxoEscuro;
+    padding-left: 30px;
+}

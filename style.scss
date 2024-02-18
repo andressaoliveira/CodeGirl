@@ -2,6 +2,7 @@
 //npm install -g sass
 
 @import "cores.scss";
+@import "menu/menu.scss";
 @import "pages/sobre/sobre.scss";
 @import "pages/cupons/cupons.scss";
 @import "pages/cursos/cursos.scss";
@@ -30,7 +31,7 @@
 #grid-principal {
     max-width: 650px;
     display: grid;
-    grid-template-areas: "principal" "sobre" "cupons" "cursos" "mentoria" "comentarios" "footer";
+    grid-template-areas: "menu" "principal" "sobre" "cupons" "cursos" "mentoria" "comentarios" "footer";
     background-color: $roxoEscuro;
 
     #principal {
@@ -39,6 +40,7 @@
         grid-template-areas: "titulo titulo" "texto imagem";
         grid-template-columns: 3fr 2fr;
         background-color: $roxo;
+        margin-top: 60px;
 
 
         #titulo-principal {
@@ -69,6 +71,10 @@
                 display: flex;
             }
         }
+    }
+
+    #menu{
+        grid-area: menu;
     }
 
     #sobre {
@@ -110,7 +116,7 @@
 }
 
 .secao {
-    width: -webkit-fill-available;
+    width: 100%;
     padding: 15px 25px;
 
     iframe {

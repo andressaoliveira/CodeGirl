@@ -1,3 +1,32 @@
+#menu {
+  height: 60px;
+  width: 650px;
+  display: flex;
+  position: fixed;
+  background-color: #202136;
+}
+
+.nav-link {
+  color: #FF78B5 !important;
+  font-size: 22px;
+}
+.nav-link:hover {
+  color: #45CE73 !important;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-toggler {
+  background-color: #FFD2EB;
+}
+
+.navbar-collapse {
+  background-color: #202136;
+  padding-left: 30px;
+}
+
 #sobre {
   background-color: #202136;
 }
@@ -260,7 +289,7 @@
 #grid-principal {
   max-width: 650px;
   display: grid;
-  grid-template-areas: "principal" "sobre" "cupons" "cursos" "mentoria" "comentarios" "footer";
+  grid-template-areas: "menu" "principal" "sobre" "cupons" "cursos" "mentoria" "comentarios" "footer";
   background-color: #202136;
 }
 #grid-principal #principal {
@@ -269,6 +298,7 @@
   grid-template-areas: "titulo titulo" "texto imagem";
   grid-template-columns: 3fr 2fr;
   background-color: #332649;
+  margin-top: 60px;
 }
 #grid-principal #principal #titulo-principal {
   grid-area: titulo;
@@ -294,6 +324,9 @@
 #grid-principal #principal #imagem-principal img {
   width: 100%;
   display: flex;
+}
+#grid-principal #menu {
+  grid-area: menu;
 }
 #grid-principal #sobre {
   grid-area: sobre;
@@ -326,7 +359,7 @@
 }
 
 .secao {
-  width: -webkit-fill-available;
+  width: 100%;
   padding: 15px 25px;
 }
 .secao iframe {
