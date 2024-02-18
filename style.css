@@ -232,7 +232,7 @@
 #comentarios .cards .card {
   display: flex;
   flex-direction: row;
-  min-width: 250px;
+  min-width: 255px;
   height: 130px;
   background-color: #FFFFFF;
   border-radius: 20px;
