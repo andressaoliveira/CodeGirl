@@ -36,7 +36,7 @@
     #principal {
         display: grid;
         grid-area: principal;
-        grid-template-areas: "titulo titulo" "texto imagem";
+        grid-template-areas: "titulo imagem" "texto texto";
         grid-template-columns: 3fr 2fr;
         background-color: $roxo;
         margin-top: 60px;
@@ -48,8 +48,8 @@
             font-size: 24px;
             display: flex;
             justify-content: center;
-            align-items: flex-end;
-            padding: 25px;
+            align-items: center;
+            padding: 25px 25px 0 25px;
             font-weight: 700;
         }
 
@@ -133,5 +133,13 @@
 
     .simbolo {
         color: $verde;
+    }
+}
+
+@media (min-width: $desktop) {
+    #grid-principal {
+        #principal {
+            grid-template-areas: "titulo titulo" "texto imagem";
+        }
     }
 }
