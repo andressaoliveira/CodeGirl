@@ -6,5 +6,5 @@ function getAltura(pagina) {
 
     var altura = iframe.contentWindow.document.getElementById(pagina).scrollHeight;
     console.log("altura " + pagina, altura)
-    iframe.height = altura;
+    iframe.height = altura + 5;
 }

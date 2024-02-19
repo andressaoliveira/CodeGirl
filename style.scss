@@ -1,7 +1,7 @@
 //sass style.scss style.css --watch
 //npm install -g sass
 
-@import "cores.scss";
+@import "variaveis.scss";
 @import "menu/menu.scss";
 @import "pages/sobre/sobre.scss";
 @import "pages/cupons/cupons.scss";
@@ -14,8 +14,7 @@
     margin: 0;
     text-decoration: none;
     color: $branco;
-    font-family: $fonte-padrao !important;
-    font-size: 14px;
+    font-family: $fontePadrao;
     border: none;
     font-weight: 400;
 }
@@ -29,7 +28,7 @@
 }
 
 #grid-principal {
-    max-width: 650px;
+    max-width: 900px;
     display: grid;
     grid-template-areas: "menu" "principal" "sobre" "cupons" "cursos" "mentoria" "comentarios" "footer";
     background-color: $roxoEscuro;
