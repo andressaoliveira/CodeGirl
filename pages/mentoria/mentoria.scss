@@ -115,14 +115,15 @@
             max-width: 500px;
         }
 
+        a:hover {
+            span {
+                color: $verde;
+            }
+        }
+
         img {
             padding-right: 10px;
         }
     }
 
-    .link:hover {
-        span {
-            color: $verde;
-        }
-    }
 }

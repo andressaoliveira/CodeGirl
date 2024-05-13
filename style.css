@@ -230,11 +230,11 @@
   margin: 13px 0;
   max-width: 500px;
 }
+#mentoria .link a:hover span {
+  color: #45CE73;
+}
 #mentoria .link img {
   padding-right: 10px;
-}
-#mentoria .link:hover span {
-  color: #45CE73;
 }
 
 #comentarios {
