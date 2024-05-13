@@ -30,7 +30,7 @@
 #grid-principal {
     max-width: 900px;
     display: grid;
-    grid-template-areas: "menu" "principal" "sobre" "cupons" "cursos" "mentoria" "comentarios" "footer";
+    grid-template-areas: "menu" "principal" "sobre" "mentoria" "comentarios" "cursos" "cupons" "footer";
     background-color: $roxoEscuro;
 
     #principal {
