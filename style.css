@@ -217,6 +217,9 @@
 }
 #mentoria .link {
   display: flex;
+  justify-content: center;
+}
+#mentoria .link a {
   background-color: #FF78B5;
   color: #FFFFFF;
   padding: 10px 20px;
@@ -225,6 +228,7 @@
   font-weight: 700;
   justify-content: center;
   margin: 13px 0;
+  max-width: 500px;
 }
 #mentoria .link img {
   padding-right: 10px;
